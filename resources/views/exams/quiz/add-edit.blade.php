@@ -1,12 +1,11 @@
 @extends('layouts.admin.adminlayout')
 
-<link href="{{CSS}}plugins/datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet">	
 @section('content')
 
 	<!-- Page Heading -->
 				<ul class="breadcrumb no-border no-radius b-b b-light pull-in">
 			      <li><a href="{{PREFIX}}"><i class="fa fa-home"></i>{{getPhrase('home')}}</a></li>
-			      <li><a href="{{URL_QUIZZES}}">{{getPhrase('exmas')}} </a></li>
+			      <li><a href="{{URL_QUIZZES}}">{{getPhrase('exams')}} </a></li>
 			      <li>{{$title}}</li>
 			    </ul>
 
@@ -76,33 +75,30 @@
 @include('common.alertify')
  <script src="{{JS}}moment.min.js"></script>
 
-  <script src="{{JS}}plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-
  <script>
+  var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
  
- 	      $(function () {
-        $('#datetimepicker6').datetimepicker({
-        	@if($record)
-        	   defaultDate: "{{$record->end_date}}",
-        	   format: 'YYYY-MM-DD H:mm',
-        	  @endif    
-        	  
-        	  
-        });
-        $('#datetimepicker7').datetimepicker({
-        	@if($record)
-        	   defaultDate: "{{$record->end_date}}",
-        	    format: 'YYYY-MM-DD H:mm',
-        	  @endif  
-            useCurrent: false //Important! See issue #1075
-        });
-        $("#datetimepicker6").on("dp.change", function (e) {
-            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-        $("#datetimepicker7").on("dp.change", function (e) {
-            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-        });
-    });
+var checkin = $('#dpd1').datepicker({
+  onRender: function(date) {
+    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > checkout.date.valueOf()) {
+    var newDate = new Date(ev.date)
+    newDate.setDate(newDate.getDate() + 1);
+    checkout.setValue(newDate);
+  }
+  checkin.hide();
+  $('#dpd2')[0].focus();
+}).data('datepicker');
+var checkout = $('#dpd2').datepicker({
+  onRender: function(date) {
+    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  checkout.hide();
+}).data('datepicker');
  </script>
 
 @stop

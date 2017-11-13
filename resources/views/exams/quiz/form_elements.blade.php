@@ -169,8 +169,8 @@
 
 				<div class="row" >
 		 	<?php 
-		 	$date_from = date('Y/m/d');
-		 	$date_to = date('Y/m/d');
+		 	$date_from = date('Y-m-d');
+		 	$date_to = date('Y-m-d');
 		 	if($record)
 		 	{
 		 		$date_from = $record->start_date;
@@ -180,13 +180,13 @@
 		 	 ?>
 		 	 <fieldset class="form-group col-md-6">
 				{{ Form::label('start_date', getphrase('start_date')) }}
-				{{ Form::text('start_date', $date_from , $attributes = array('class'=>'input-sm form-control', 'placeholder' => '2015/7/17', 
-				'id' => 'datetimepicker6')) }}
+				{{ Form::text('start_date', $date_from , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => '2015/7/17', 
+				'id' => 'dpd1')) }}
 			</fieldset>
 
 			<fieldset class="form-group col-md-6">
 				{{ Form::label('end_date', getphrase('end_date')) }}
-				{{ Form::text('end_date', $date_to , $attributes = array('class'=>'input-sm form-control', 'placeholder' => '2015/7/17', 'id' => 'datetimepicker7')) }}
+				{{ Form::text('end_date', $date_to , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => '2015/7/17', 'id' => 'dpd2')) }}
  			</fieldset>
 
 			</div>

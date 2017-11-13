@@ -176,7 +176,7 @@ class QuizController extends Controller
                               array(
                                 'academic_years'=>\App\Academic::select(['id', 'academic_year_title'])->get()
                                 ));
-      $data['title']            = getPhrase('create_exam');
+      $data['title']            = getPhrase('add_exam');
       $data['module_helper']    = getModuleHelper('create-quiz');
       return view('exams.quiz.add-edit', $data);
     }

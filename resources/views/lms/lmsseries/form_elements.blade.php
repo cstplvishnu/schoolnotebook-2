@@ -25,7 +25,7 @@
 
 							)) }}
 
-						<div class="validation-error" ng-messages="formLms.title.$error",'readonly'=>true>
+						<div class="validation-error" ng-messages="formLms.title.$error">
 
 	    					{!! getValidationMessage()!!}
 
