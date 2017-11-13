@@ -4,7 +4,7 @@
 
 <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
 			      <li><a href="{{PREFIX}}"><i class="fa fa-home"></i> {{getPhrase('home')}}</a></li>
-			      <li><a href="{{URL_TOPICS}}">{{getPhrase('subjects')}} </a></li>
+			      <li><a href="{{URL_TOPICS}}">{{getPhrase('topics')}} </a></li>
 			      <li>{{$title}}</li>
 			    </ul>
             <div class="row">

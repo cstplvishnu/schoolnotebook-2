@@ -32,7 +32,7 @@ class SubjectsController extends Controller
       }
         $data['active_class']       = 'courses';
         $data['sub_active_class']   = 'subjects';
-        $data['title']              = getPhrase('subjects_list');
+        $data['title']              = getPhrase('subjects');
         $data['module_helper']      = getModuleHelper('subjects-list');
         $data['layout']             = getLayout();
       return view('mastersettings.subjects.list', $data);

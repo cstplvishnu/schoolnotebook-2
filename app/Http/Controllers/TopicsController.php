@@ -34,7 +34,7 @@ class TopicsController extends Controller
 
         $data['active_class']       = 'courses';
         $data['sub_active_class']   = 'topics';
-        $data['title']              = getPhrase('topics_list');
+        $data['title']              = getPhrase('topics');
         $data['module_helper']      = getModuleHelper('topics-list');
     	return view('mastersettings.topics.list', $data);
     }

@@ -50,7 +50,7 @@
 
   <!-- Content Wrapper. Contains page content -->
 
-   <section id="content">
+   <section id="content" style="width: 100%">
       <section class="vbox">   
         <section class="scrollable padder">
 
