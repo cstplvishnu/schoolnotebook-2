@@ -89,11 +89,16 @@ class StaffController extends Controller
      */
     public function updateGeneralDetails(Request $request, $id)
     {
+        if($request->course_parent_id == '' || $request->course_id==-1){
+            flash('Oops..','please_select_general_details','warning');
+            return back();
+        }
+        // dd($request);
         $this->validate($request, [
-        'date_of_join'  => 'bail|required|max:20|',
-        
-        'job_title'     => 'bail|required|max:20|',
-        'qualification' => 'bail|required|max:20|',
+        'date_of_join'  => 'bail|required|max:20',
+
+        'job_title'     => 'bail|regex:/^[a-zA-Z]+$/u|max:20|required',
+        'qualification' => 'bail|required|max:20',
         'total_experience_years' 
                         => 'bail|required|max:2',
          'total_experience_month' 

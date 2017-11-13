@@ -231,7 +231,7 @@
                         <li {{ isSubActive($sub_active_class, 'quiz') }} >
                           <a href="{{URL_QUIZZES}}">                                                        
                             <i class="fa fa-clock-o"></i>
-                            <span>{{getPhrase('exam')}}</span>
+                            <span>{{getPhrase('exams')}}</span>
                           </a>
                         </li>
                         <li {{ isSubActive($sub_active_class, 'exam_series') }}>
