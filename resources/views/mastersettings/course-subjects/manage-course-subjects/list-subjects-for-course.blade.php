@@ -27,7 +27,8 @@
 					<input type="hidden" name="course_parent_id" value="{{$record->parent_id}}">
 
 	    <div class="col-sm-8">
-          <section class="panel panel-default">
+		<div class="ss-fix">
+          <section class="panel panel-default ss-fixes">
                 <header class="panel-heading clear">
                     <strong>{{$title}}</strong>
                  </header>
@@ -135,6 +136,7 @@
                     </div>
                 </div>
             </section>
+        </div>				
         </div>				
 
 

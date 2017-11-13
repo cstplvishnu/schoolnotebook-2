@@ -342,14 +342,94 @@ color:#bdbbbb !important;
 
 
 /*Timetable*/
+@media(min-width: 768px) {
+	
+	.ss-fix{
+		position:relative;
+	}
+	
+	.ss-fixes{
+		position:fixed;
+		width:45%;
+	}
+}
+
+@media(min-width: 800px) {
+	
+	.ss-fix{
+		position:relative;
+	}
+	
+	.ss-fixes{
+		position:fixed;
+		width:46%;
+	}
+}
+
+@media(min-width: 992px) {
+	
+	.ss-fix{
+		position:relative;
+	}
+	
+	.ss-fixes{
+		position:fixed;
+		width:50%;
+	}
+	
+}
+
+@media(min-width: 1024px) {
+	.ss-fix{
+		position:relative;
+	}
+	
+	.ss-fixes{
+		position:fixed;
+		width:50%;
+	}
+	
+}
+
+@media(min-width: 1100px) {
+	.ss-fix{
+		position:relative;
+	}
+	
+	.ss-fixes{
+		position:fixed;
+		width:52%;
+	}
+	
+}
 
 
 @media(min-width: 1200px) {
     .academia_visiblelist_fix.affix {
         width: 60%
     }
+	
+	.ss-fix{
+		position:relative;
+	}
+	
+	.ss-fixes{
+		position:fixed;
+		width:54%;
+	}
+	
 }
 @media(min-width: 1600px) {
+	
+	.ss-fix{
+		position:relative;
+	}
+	
+	.ss-fixes{
+		position:fixed;
+		width:57.3%;
+	}
+	
     .academia_visiblelist_fix.affix {
         width: 70.1%
     }
@@ -359,11 +439,11 @@ color:#bdbbbb !important;
     max-height: 500px;
     overflow: auto;
 }
+
 #window_auto_height.vertical-scroll {
     overflow: auto;
     max-height: none;
 }
-
 
 .vertical-scroll table.table,
 .vertical-scroll table.table td,
@@ -374,13 +454,10 @@ color:#bdbbbb !important;
     background: #97d881;
 }
 
-
 .btn.btn-zindextop {
     position: relative;
     z-index: 9;
 }
-
-
 
 /*Prabhakar*/
 
@@ -626,12 +703,7 @@ p.break-block {
     margin-top: -10px;
     left: 0;
 }
-/*Prabhakar End*/
-
-
 /*Time Table End*/
-
-
 
 /*Lits Side Bar*/
 
@@ -701,7 +773,6 @@ p.break-block {
     font-weight: normal
 }
 
-
 .list-sidebar li a .hover-fab-list {
     position: absolute;
     background: #fafafa;
@@ -756,7 +827,6 @@ p.break-block {
     visibility: hidden;
 }
 
-
 .align-row-center .list-sidebar {
     min-height: 80px;
     position: relative;
@@ -779,7 +849,6 @@ p.break-block {
 }
 
 /*List Side Bar End*/
-
 
 /*Time Table  - -Insruction*/
 
@@ -843,7 +912,6 @@ p.break-block {
     margin-top: 30px;
 }
 
-
 .input-group .instruction {
     position: absolute;
     left: 540px;
@@ -894,7 +962,6 @@ p.break-block {
     display: block;
 }
 
-
 /*timetavle Instruction closed*/
 
 .selected-questions-details span {
@@ -911,7 +978,6 @@ p.break-block {
     padding: 6px;
 }
 
-
 @media(min-width:768px) {
     .attendance_summary {
         min-width: 200px;
@@ -919,10 +985,6 @@ p.break-block {
         margin: 10px 10px 0 0;
     }
 }
-
-
-
-
 
 /*Student Exam*/
 
@@ -1026,8 +1088,6 @@ ul.suggestions li.hints span.hint {
     margin: 5px 20px 0 0;
     color: #7f858e;
 }
-
-
 
 @media(max-width: 768px) {
     .suggestions > li {
@@ -1309,7 +1369,6 @@ ul.filling-blank li .option-hints {
     top: 0;
 }
 
-
 .questions-container {
     margin: 0;
     padding: 0 0 0 30px;
@@ -1383,15 +1442,11 @@ ul.filling-blank li .option-hints {
     font-size: 12px;
 }
 
-
 .option-hints i.mdi {
     font-size: 24px;
     line-height: 28px;
     color: #44a1ef
 }
-
-
-
 
 .textarea-hint {
     display: block;
@@ -1407,7 +1462,6 @@ ul.filling-blank li .option-hints {
     padding: 20px;
     min-height: 120px;
 }
-
 
 audio.audio-controls {
     width: 100%;
@@ -1443,16 +1497,12 @@ span.numbers-count {
     background: #97d881
 }
 
-
 .list-style-none {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
-
 /*End Exam Form*/
-
 
 /*results*/
 
@@ -1492,7 +1542,6 @@ span.numbers-count {
     /* box-shadow: 0 0 30px #cef7c0 */
 }
 
-
 .answer_checkbox {
     margin-bottom: 30px;
 }
@@ -1508,7 +1557,6 @@ span.numbers-count {
     width: calc(100% - 50px);
     left: 50px;
 }
-
 
 .profile-details {
     margin: 10px 0 0;
@@ -1536,7 +1584,6 @@ span.numbers-count {
 .profile-details p span + span {
     border-left: 1px solid #d8dcd9
 }
-
 
 .library-statistic {
     margin: 0;
@@ -1689,7 +1736,6 @@ list-group.no-radius .ss-noborderd {
     top:-10px;
 }
 
-
 .ajax-loader {
     position: fixed;
     top: 50%;
@@ -1706,6 +1752,7 @@ list-group.no-radius .ss-noborderd {
     text-align: center;
     padding: 6px;
 }
+
 .ajax-loader img {
     width: 30px;
 }
