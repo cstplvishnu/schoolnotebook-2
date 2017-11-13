@@ -1,0 +1,208 @@
+body.login-screen {
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+}
+body.login-screen:before {
+    display: none
+}
+body.login-screen .login-content {
+    background: #fff;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0 100px;
+    background-color: #f8fafb;
+    box-shadow: 0px 0px 139px 0.00px rgba(147, 161, 185, 0.59);
+}
+
+body.login-screen .login-content {
+        padding-bottom: 50px;
+        max-width: 1000px;
+        margin: 40px 0;
+    }
+
+    @media(max-width:768px) {
+    body.login-screen .login-content {
+        margin: 0;
+    }
+    .login-content .menus ul li {
+        padding: 15px;
+        font-size: 13px;
+    }
+    .loginform {
+        padding: 15px;
+    }
+    .login-content .footer {
+        text-align: center;
+    }
+    .login-content .footer a {
+        float: none !important;
+        display: inline-block;
+    }
+}
+
+
+.login-content .logo {
+    padding: 50px;
+}
+.login-content p {
+    font-size: 16px;
+}
+.login-content .menus {
+    background-color: #f2f7f8;
+    border: #e9f0f3 1px solid;
+    text-align: center;
+    max-height: 58px;
+    margin: 0 0 60px;
+}
+.login-content .menus ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    background-color: #ffffff;
+}
+.login-content .menus ul li {
+    display: inline-block;
+    margin: 0 0 0 -4px;
+    padding: 15px 50px;
+    font-size: 15px;
+    color: #66707e;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: default;
+}
+.login-content .menus ul li + li a {
+    border-left: 1px solid #e9f0f3
+}
+.login-content .menus ul li a i {
+    display: inline-block;
+    font-size: 26px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.login-content .menus ul li a:hover,
+.login-content .menus ul li.active a {
+    /*background-color: #46a1ee;
+    color: #Fff;*/
+    
+    text-decoration: none;
+}
+
+.login-content .footer {
+    max-width: 880px;
+    width: 100%;
+    margin: 80px auto 0;
+    display: block;
+}
+.login-content .footer a {
+    line-height: 34px;
+    font-size: 20px;
+}
+.login-content .footer a .icon {
+    float: left;
+    font-size: 34px;
+}
+.login-content p.account {
+    font-size: 20px;
+}
+.login-content .guide p {
+    display: inline-block;
+    background: #f2f7f8;
+    border-radius: 3px;
+    border: 5px solid #f0f2f3;
+    padding: 5px 60px;
+    margin: 0 0 40px;
+}
+.login-content .logo {
+        padding: 30px 0;
+    }
+    .loginform .buttons {
+        margin: 40px 0 20px 0;
+    }
+    .login-content .menus {
+        margin: 0 0 30px;
+    }
+    .login-content .footer {
+        margin: 20px auto 0;
+    }
+
+ .installation-page .loginform .input-group .input-group-addon {
+    padding-left: 25px;
+    padding-right: 25px
+}
+.installation-page .loginform .input-group .input-group-addon .fa {
+    font-size: 20px;
+    padding-left: 0;
+    color: #adbbc7;
+}
+.installation-page .loginform .info h3 {
+    font-weight: 600;
+    margin: 0;
+}
+.installation-page .loginform .info {
+    margin-bottom: 20px;
+}
+.installation-page .loginform {
+    max-width: 900px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.loadingpage {
+    padding: 80px 0
+}
+
+.validation-error {
+    display: block;
+    background: #fff4f2;
+    color: #e4391f;
+    padding: 3px 10px;
+}
+.validation-error p {
+    margin: 0;
+}
+.form-control.has-error {
+    border-color: #ffd2ca;
+}
+.form-control.has-error:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 91, 62, 0.6)
+}
+.form-control + .validation-error {
+    display: none;
+}
+.form-control.has-error + .validation-error {
+    display: block;
+}
+.form-control.has-error + .validation-error p {
+    margin: 0;
+    font-size: 13px;
+    position: absolute;
+    bottom: -25px;
+}
+
+.form-auth-style .form-control.has-error + .validation-error p {
+    bottom: -14px;
+    left: 0;
+}
+
+.ss-bottom{
+   margin-bottom:30px;
+}
+
+.form-control.has-error + .ss-change p{
+    bottom:-10px;
+}
