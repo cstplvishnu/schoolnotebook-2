@@ -338,9 +338,9 @@ color:#bdbbbb !important;
 }
 
 /*End Of Message Module*/
-
-
-
+.nav-pills > li > a {
+    border-bottom:1px solid #dddddd;
+}
 /*Timetable*/
 @media(min-width: 768px) {
 	
