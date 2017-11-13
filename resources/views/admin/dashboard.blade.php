@@ -81,6 +81,7 @@
                         <?php $latest_staff = App\User::getLatestUsersDashboard('staff',4);?> 
                         <header class="panel-heading"> <strong>{{getPhrase('latest_faculty')}}</strong> </header>
                         <ul class="list-group alt">
+                            @if(count($latest_staff))
                             @foreach($latest_staff as $user)
                             <li class="list-group-item">
                                 <div class=""> 
@@ -101,6 +102,9 @@
                                 </div>
                             </li>
                          @endforeach
+                         @else
+                         <li class="list-group-item">{{getPhrase('no_data_available')}}</li>
+                         @endif
                          </ul>
                     </section>
                 </div>
@@ -111,7 +115,7 @@
                          </header>
                         <?php $latest_students = App\User::getLatestUsersDashboard('student',4);?>  
                         <ul class="list-group alt">
-
+                             @if(count($latest_students))    
                               @foreach($latest_students as $user)
 
                             <li class="list-group-item">
@@ -135,6 +139,10 @@
                             </li>
 
                            @endforeach
+
+                            @else
+                         <li class="list-group-item">{{getPhrase('no_data_available')}}</li>
+                         @endif
                         </ul>
                     </section>
                 </div>
@@ -162,7 +170,7 @@
 
                      <?php  $online_payments = App\Payment::latestPayments('online',5); ?>
        
-
+                     @if(count($online_payments))
                             @foreach($online_payments as $record)
 
                             <?php 
@@ -188,7 +196,15 @@
                             <td>{{getCurrencyCode()}} {{ucfirst($record->paid_amount)}}</td>
                             <td class="active" ><i class="{{$class}}"></i></td>
                         </tr>
+
+
                         @endforeach
+
+                        @else
+                        <tr>
+                            <td>{{getPhrase('no_data_available')}}</td>
+                        </tr>
+                        @endif
                     </tbody>
                 </table>
             </div>
@@ -215,7 +231,7 @@
 
                      <?php  $online_payments = App\Payment::latestPayments('offline',5); ?>
        
-
+                        @if(count($online_payments))
                             @foreach($online_payments as $record)
 
                             <?php 
@@ -242,6 +258,12 @@
                             <td class="active"><i class="{{$class}}"></i></td>
                         </tr>
                         @endforeach
+
+                         @else
+                        <tr>
+                            <td>{{getPhrase('no_data_available')}}</td>
+                        </tr>
+                        @endif
                     </tbody>
                 </table>
             </div>
@@ -262,6 +284,7 @@
             <header class="panel-heading"><strong> {{getPhrase('recent_exam_takers')}}</strong> </header>
             <ul class="list-group alt">
       <?php $records = App\QuizResult::latestQuizAttempts(4); ?>
+            @if(count($records))
              @foreach($records as $user)
                 <li class="list-group-item">
                     <div class=""> <span class="pull-left thumb-sm">
@@ -281,6 +304,10 @@
                     </div>
                 </li>
                @endforeach
+
+                 @else
+                         <li class="list-group-item">{{getPhrase('no_data_available')}}</li>
+                         @endif
             </ul>
         </section>
         

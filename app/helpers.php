@@ -580,7 +580,7 @@ function getRegexPattern($key='name')
 {
     $phone_regx = getSetting('phone_number_expression', 'site_settings');
     $pattern = array(
-                    'name' => '/(^[A-Za-z0-9 ]+$)+/',
+                    'name' => '/(^[A-Za-z0-9]+$)+/',
                     'name1' => '/(^[A-Za-z]+$)+/',
                     'email' => '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/',
                     'phone'=>$phone_regx
