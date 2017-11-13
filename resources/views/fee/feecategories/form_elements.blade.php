@@ -7,9 +7,9 @@
 						
 						{{ Form::text('title', $value = null , $attributes = array(
 						'class'=>'form-control', 
-						'placeholder' => 'Eg: 	2015-2016-CSE-1st Year-1st Semister',
+						'placeholder' => 'Eg: 20152016CSE',
 						'ng-model'     =>'title', 
-						'ng-pattern'   => getRegexPattern('name1'),
+						'ng-pattern'   => getRegexPattern('name'),
                         'ng-minlength' => '2',
                         'ng-maxlength' => '60',
                         'required'     => 'true', 

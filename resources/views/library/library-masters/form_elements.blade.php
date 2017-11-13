@@ -218,7 +218,6 @@
 
 							'ng-model'=>'actual_price',
 							'id'=>'actual_price' ,
-                             
                              'required'=> 'true', 
 
 							'ng-class'=>'{"has-error": formLibraryMaster.actual_price.$touched && formLibraryMaster.actual_price.$invalid}',
@@ -250,7 +249,6 @@
 
 							'ng-model'=>'chargible_price_if_lost',
 							'id'=>'chargible_price_if_lost' ,
-                             
                              'required'=> 'true', 
 
 							'ng-class'=>'{"has-error": formLibraryMaster.chargible_price_if_lost.$touched && formLibraryMaster.chargible_price_if_lost.$invalid}',

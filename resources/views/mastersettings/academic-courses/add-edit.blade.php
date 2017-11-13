@@ -28,7 +28,9 @@
 						'method'=>'post')) }}
 
         <div class="col-sm-9">
-          <section class="panel panel-default">
+          <div class="ss-fix">
+
+          <section class="panel panel-default ss-fixes">
                 <header class="panel-heading clear"><strong>{{$title}}</strong></header>
                 <div class="row">
                     <div class="col-sm-12">
@@ -70,6 +72,7 @@
                     </div>
                 </div>
             </section>
+          </div>
         </div>
 
         <div class="col-sm-3">
