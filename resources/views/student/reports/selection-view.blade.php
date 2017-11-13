@@ -59,7 +59,7 @@
 </div>
   </div>
     <div class="col-md-3">
-        <ul class="nav nav-pills nav-stacked nav-tabs nav-tabs-custom">
+        <ul class="nav nav-pills nav-stacked nav-tabs nav-tabs-custom ss-bborder">
         <li  ng-repeat="category in exam_categories" ng-class="{ active: isSet(category.id) }">
             <a href ng-click="setTab(category.id)">@{{category.category}}</a>
             
