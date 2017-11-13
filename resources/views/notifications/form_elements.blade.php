@@ -60,13 +60,13 @@
 
                {{ Form::label('valid_from', getphrase('valid_from')) }}
 
-              {{ Form::text('valid_from', null , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => 'Eg: 2015-06-12','readonly'=>true)) }}
+              {{ Form::text('valid_from', null , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => 'Eg: 2015-06-12','readonly'=>true,'id'=>'dpd1')) }}
                 </fieldset>
 
                   <fieldset class="form-group col-md-6">
                     {{ Form::label('valid_to', getphrase('valid_to')) }}
 
-               {{ Form::text('valid_to', null , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => 'Eg: 2015-06-12','readonly'=>true)) }}
+               {{ Form::text('valid_to', null , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => 'Eg: 2015-06-12','readonly'=>true,'id'=>'dpd2')) }}
 
                   </fieldset>
            </div>

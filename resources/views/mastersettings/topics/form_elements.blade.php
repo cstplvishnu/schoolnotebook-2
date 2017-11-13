@@ -43,10 +43,20 @@
 						{{ Form::text('topic_name', $value = null , $attributes = array('class'=>'form-control', 'placeholder' => 'Eg : Introduction',
 							'ng-model'=>'topic_name',
 							'required'=> 'true', 
+
+              'ng-minlength' => '2',
+
+              'ng-maxlength' => '30',
+              'ng-pattern'=>getRegexPattern('name1'), 
 							'ng-class'=>'{"has-error": formTopics.topic_name.$touched && formTopics.topic_name.$invalid}',
 						 ))}}
 						  <div class="validation-error" ng-messages="formTopics.topic_name.$error" >
 	    					{!! getValidationMessage()!!}
+                {!! getValidationMessage('pattern')!!}
+
+                {!! getValidationMessage('minlength',2,30)!!}
+
+                {!! getValidationMessage('maxlength',2,30)!!}
 	    					</div>
 
 					</div>
