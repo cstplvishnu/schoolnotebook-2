@@ -341,6 +341,11 @@ color:#bdbbbb !important;
 .ss-bborder > li > a {
     border-bottom:1px solid #dddddd;
 }
+.panel .table td, .panel .table th {
+    padding: 6px 15px;
+    border-top: 1px solid #f1f1f1;
+    min-width: 160px;
+}
 /*Timetable*/
 @media(min-width: 768px) {
 	

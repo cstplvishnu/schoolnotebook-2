@@ -86,10 +86,10 @@
                                           <td><b>@{{item.created_at}}</b></td>
                                           <td><b>{{$currency}} @{{item.amount}}</b></td>
                                           <td><b>{{$currency}} @{{item.previous_balance}}</b>&nbsp;&nbsp;&nbsp;<span ng-if="item.previous_balance >0"><a class="btn btn-primary btn-sm" href="#" onclick="showPreviousFeeData()" >{{getPhrase('view')}}</a></span></td>
-                                          <td ><b>{{$currency}} @{{item.total_amount}}</b></td>
-                                          <td ><b>{{$currency}} @{{item.paid_amount}}</b></td>
-                                          <td ><b>{{$currency}} @{{item.discount_amount}}</b></td>
-                                          <td ><b>{{$currency}} @{{item.balance}}</b></td>
+                                          <td><b>{{$currency}} @{{item.total_amount}}</b></td>
+                                          <td><b>{{$currency}} @{{item.paid_amount}}</b></td>
+                                          <td><b>{{$currency}} @{{item.discount_amount}}</b></td>
+                                          <td><b>{{$currency}} @{{item.balance}}</b></td>
                                           <td><a href="{{URL_PRINT_FEE_RECEIPT}}@{{item.transaction_id}}" class="btn btn-primary" target="_blank">{{getPhrase('yes')}}</a></td>
                                         </tr>
                                       </tbody>
@@ -128,33 +128,16 @@
 						        </div>
 						      </div>
 						    </div>
-						  </div>
-						  <!-- /Panel -->
-
-
+						  </div>  <!-- /Panel -->
 						</div>
-						
 					</div>
-
-
-
-			</div>
-							
-
-
-
-					 		</div>
-
-                       
-                       
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </section>
-
+                 </div>
+			   </div>
+            </div>
+          </div>
         </div>
+ </section>
+</div>
 
          <div class="col-sm-4">
             <section class="panel panel-default clear">
