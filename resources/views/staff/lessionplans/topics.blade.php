@@ -26,11 +26,15 @@
 					<ul class="row topic-list list-group no-radius m-b-none m-t-n-xxs list-group-alt list-group-lg">
 						<li class="col-md-6 list-group-item" ng-if="topic.childs.length != 0 " ng-repeat="subtopic in topic.childs" style="border:none;background:transparent;">
 						 
-							<div class="topics clearfix">
-								<label class="checkbox custom-checkbox m-t" style="display:inline-block;">
-								    <label class="clear">
-									
-								    <input 
+							<div class="topics clearfix ">
+							
+							
+						
+							
+							
+								<label class="checkbox" style="display:inline-block;">
+								
+								 <input 
 								    ng-if="subtopic.is_completed==null || subtopic.is_completed==0"
 								    @if($role_name=='staff')
 								    ng-click="updateTopic(subtopic.id, topic.course_subject_id, 1)"
@@ -39,7 +43,7 @@
 								    disabled="" 
 								    @endif
 								    
-								    type="checkbox" style="margin-top:10px;">
+								    type="checkbox" style="margin-top:10px;" id="checkbox-{{$i}}{{$j}}" class="checkbox-custom" name="checkbox-{{$i}}{{$j}}">
                                   
 								    
 								   
@@ -51,7 +55,10 @@
 								    @else 
 								    disabled="" 
 								    @endif
-								    checked type="checkbox" style="margin-top:10px;">
+								    checked type="checkbox" style="margin-top:10px;" id="checkbox-{{$i}}{{$j}}" class="checkbox-custom" name="checkbox-{{$i}}{{$j}}">
+								    <label for="checkbox-{{$i}}{{$j}}" class="checkbox-custom-label">
+									
+								    
                                    
 								    
 								   <!-- <div class="item-checkbox">								    	
@@ -67,7 +74,6 @@
 								<span>@{{subtopic.completed_on}}</span>
 							</div>
 							</div>
-
 						</li>
 						 <li class="list-group-item" ng-if="topic.childs.length==0" style="border:none;background:transparent;">
 				          <div class="topics clearfix">
@@ -77,7 +83,6 @@
 						
 					</ul>
 
-					
 				  
 				        </div>
                     </div>

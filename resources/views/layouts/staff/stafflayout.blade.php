@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="{{CSS}}app.css" type="text/css" />
   <link rel="stylesheet" href="{{CSS}}style.css" type="text/css" />
   <link rel="stylesheet" href="{{CSS}}notify.css" type="text/css" />
+  <link rel="stylesheet" href="{{JS}}fuelux/fuelux.css" type="text/css" />
   <link rel="stylesheet" href="{{JS}}datepicker/datepicker.css" type="text/css" />
   <link href="{{CSS}}sweetalert.css" rel="stylesheet" type="text/css">
 </head>
@@ -75,7 +76,7 @@
   <script src="{{JS}}slimscroll/jquery.slimscroll.min.js"></script>
   <script src="{{JS}}charts/easypiechart/jquery.easy-pie-chart.js"></script>
   <script src="{{JS}}charts/sparkline/jquery.sparkline.min.js"></script>
-  
+  <script src="{{JS}}fuelux/fuelux.js"></script>
   <script src="{{JS}}calendar/bootstrap_calendar.js"></script>
   <script src="{{JS}}calendar/demo.js"></script>
   <script src="{{JS}}sortable/jquery.sortable.js"></script>

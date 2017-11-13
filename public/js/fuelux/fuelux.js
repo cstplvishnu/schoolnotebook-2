@@ -72,7 +72,7 @@
 
 	// CHECKBOX PLUGIN DEFINITION
 
-	$.fn.checkbox = function (option, value) {
+	$fn.checkbox = function (option, value) {
 		var methodReturn;
 
 		var $set = this.each(function () {

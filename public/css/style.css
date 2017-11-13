@@ -81,7 +81,147 @@
     display: inline-block;
     margin-left: 30px;
 }
+/*----------------------------------
+  Checkbox Button Design
+-----------------------------------*/
 
+.checkbox-custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-custom,
+.checkbox-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+   
+    
+}
+.checkbox label{
+    color:  #333333;
+    font-weight: 600;
+    margin-top: -16px;
+}
+.checkbox p{
+    color: #777;
+    padding-left: 72px;
+}
+.checkbox-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid rgb(221, 221, 221);
+    display: inline-block;
+    vertical-align: middle;
+    width:15px;
+    height:15px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 1;
+	border-radius:4px;
+}
+
+/*----------------------------------
+  Radio Button Design
+-----------------------------------*/
+
+.checkbox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.radio label,
+.checkbox label {
+    position: relative;
+}
+
+.radio label + label,
+.checkbox label + label {
+    margin-left: 30px;
+}
+
+.radio label[class*="col-"] {
+    margin: 0;
+}
+
+.radio input,
+.checkbox input {
+    position: absolute;
+    left: -99999px;
+}
+
+.radio .item-content {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    color: #444444;
+}
+
+.hero-header-bg .radio .item-content {
+    padding-left: 30px;
+}
+
+.radio-label {
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 200px;
+    display: inline-block;
+}
+
+.radio>div {
+    margin-bottom: 10px;
+}
+
+.radio>div:last-child {
+    margin-bottom: 0;
+}
+
+.radio-content .fa {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    color: #cccccc;
+    margin: -1px;
+    padding: 1px;
+}
+
+.radio input + .radio-content .check {
+    display: none;
+}
+
+.radio input:checked + .radio-content .check {
+    display: block;
+    color: #17ba5f;
+}
+
+.radio input:checked + .radio-content .uncheck {
+    display: none;
+}
+
+.radio.light .radio-content .fa {
+    color: #fff;
+}
+
+/*Simply Change the content to any font awesome unicode here to add your own check icon*/
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: rgb(146, 207, 92);
+    font-size: 12px;
+	border: 2px solid rgb(146, 207, 92);
+    text-align: center;
+    vertical-align: middle;
+    padding:0px;
+	border-radius:4px;
+}
 
 /*.draggable-item-list{max-height: 500px; }*/
 
@@ -940,7 +1080,6 @@ p.break-block {
     margin-top: -10px;
 }
 .instruction:after {
-    position: absolute;
     width: 16px;
     height: 16px;
     background: #FFF;

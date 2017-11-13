@@ -138,6 +138,32 @@
                                         <label for="present{{$student->id}}"> <span class="fa-stack radio-button"> <i class="mdi mdi-check active"></i> </span> <label class="m-l-n-md">{{getPhrase('present')}}</label></label> 
 							</div>
 							<div class="col-md-4">
+							
+							
+							
+							<div class="ad-date-posted row-pad">
+                    <div class="side-head">
+                        DATE POSTED</div>
+                        <div class="radio">
+                            <div>
+                                <label>
+                                    <input type="radio" checked="" value="bank" name="group1"> <span class="radio-content">
+                                    <span class="item-content">24 Hours</span> <i aria-hidden="true" class="fa uncheck fa-circle-thin"></i> <i aria-hidden="true" class="fa check fa-dot-circle-o"></i> </span>
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>          
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
 							{{ Form::radio('attendance_code', 'A', $absent, array('id'=>'absent'.$student->id, 'name'=>'attendance_code['.$student->id.']',
 								'ng-click' => 'updateCount()'
 							)) }}
