@@ -181,12 +181,12 @@
 		 	 <fieldset class="form-group col-md-6">
 				{{ Form::label('start_date', getphrase('start_date')) }}
 				{{ Form::text('start_date', $date_from , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => '2015/7/17', 
-				'id' => 'dpd1')) }}
+				'id' => 'dpd1','readonly'=>'true')) }}
 			</fieldset>
 
 			<fieldset class="form-group col-md-6">
 				{{ Form::label('end_date', getphrase('end_date')) }}
-				{{ Form::text('end_date', $date_to , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => '2015/7/17', 'id' => 'dpd2')) }}
+				{{ Form::text('end_date', $date_to , $attributes = array('class'=>'input-sm  datepicker-input form-control', 'placeholder' => '2015/7/17', 'id' => 'dpd2','readonly'=>'true')) }}
  			</fieldset>
 
 			</div>

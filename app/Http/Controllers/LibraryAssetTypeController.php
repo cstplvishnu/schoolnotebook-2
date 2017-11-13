@@ -70,7 +70,7 @@ class LibraryAssetTypeController extends Controller
         })
 
         ->editColumn('asset_type',function($records){
-            return '<strong>'.$records->asset_type.' ('.$records->id.')'.'</strong>';
+            return '<strong>'.$records->asset_type.'<span class="text-danger"> ('.$records->id.')</span>'.'</strong>';
         })
 
         ->removeColumn('id')
